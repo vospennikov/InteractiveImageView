@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "gestures",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vospennikov/Gestures.git",
+      "state" : {
+        "revision" : "f921bc8c372fd041135b0b6a892f2abfc7a557cd",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
