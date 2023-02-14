@@ -7,24 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD5F6445295999590040637F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F6444295999590040637F /* SceneDelegate.swift */; };
-		DD5F6447295999E70040637F /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F6446295999E70040637F /* ExampleApp.swift */; };
-		DD5F644929599AF60040637F /* ExampleAppWindowGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5F644829599AF60040637F /* ExampleAppWindowGroup.swift */; };
-		DD7C71CA2959964D0052011D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7C71C92959964D0052011D /* ContentView.swift */; };
-		DD7C71CC2959964E0052011D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7C71CB2959964E0052011D /* Assets.xcassets */; };
-		DD7C71CF2959964E0052011D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD7C71CE2959964E0052011D /* Preview Assets.xcassets */; };
+		DD60F9FA299A74CB00E54C96 /* ExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9F1299A74CB00E54C96 /* ExampleApp.swift */; };
+		DD60F9FC299A74CB00E54C96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD60F9F4299A74CB00E54C96 /* Assets.xcassets */; };
+		DD60F9FE299A74CB00E54C96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9F6299A74CB00E54C96 /* SceneDelegate.swift */; };
+		DD60F9FF299A74CB00E54C96 /* ExampleAppWindowGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9F7299A74CB00E54C96 /* ExampleAppWindowGroup.swift */; };
+		DD60FA01299A74CB00E54C96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9F9299A74CB00E54C96 /* ContentView.swift */; };
+		DD6902D3299A73DE0045DAA7 /* Gestures in Frameworks */ = {isa = PBXBuildFile; productRef = DD6902D2299A73DE0045DAA7 /* Gestures */; };
+		DDCEFA63299A765D005E075B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFA62299A765D005E075B /* AppDelegate.swift */; };
+		DDCEFA65299A765D005E075B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFA64299A765D005E075B /* SceneDelegate.swift */; };
+		DDCEFA67299A765D005E075B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFA66299A765D005E075B /* ViewController.swift */; };
+		DDCEFA6C299A765D005E075B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCEFA6B299A765D005E075B /* Assets.xcassets */; };
+		DDCEFA6F299A765D005E075B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCEFA6D299A765D005E075B /* LaunchScreen.storyboard */; };
+		DDCEFA75299A76F3005E075B /* ImageScroll in Frameworks */ = {isa = PBXBuildFile; productRef = DDCEFA74299A76F3005E075B /* ImageScroll */; };
 		DDE23F3729599716002E38B0 /* ImageScroll in Frameworks */ = {isa = PBXBuildFile; productRef = DDE23F3629599716002E38B0 /* ImageScroll */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DD5F6444295999590040637F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD5F6446295999E70040637F /* ExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleApp.swift; sourceTree = "<group>"; };
-		DD5F644829599AF60040637F /* ExampleAppWindowGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppWindowGroup.swift; sourceTree = "<group>"; };
-		DD64E7FB2959CE1600A5708F /* Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Example-Info.plist"; sourceTree = "<group>"; };
-		DD7C71C42959964D0052011D /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD7C71C92959964D0052011D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DD7C71CB2959964E0052011D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DD7C71CE2959964E0052011D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD60F9F1299A74CB00E54C96 /* ExampleApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleApp.swift; path = "Example-SwiftUI/ExampleApp.swift"; sourceTree = "<group>"; };
+		DD60F9F4299A74CB00E54C96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "Example-SwiftUI/Assets.xcassets"; sourceTree = "<group>"; };
+		DD60F9F6299A74CB00E54C96 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "Example-SwiftUI/SceneDelegate.swift"; sourceTree = "<group>"; };
+		DD60F9F7299A74CB00E54C96 /* ExampleAppWindowGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleAppWindowGroup.swift; path = "Example-SwiftUI/ExampleAppWindowGroup.swift"; sourceTree = "<group>"; };
+		DD60F9F8299A74CB00E54C96 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = "Example-SwiftUI/Package.swift"; sourceTree = "<group>"; };
+		DD60F9F9299A74CB00E54C96 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "Example-SwiftUI/ContentView.swift"; sourceTree = "<group>"; };
+		DD7C71C42959964D0052011D /* Example-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCEFA5A299A75D9005E075B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Example-SwiftUI/Info.plist"; sourceTree = "<group>"; };
+		DDCEFA60299A765D005E075B /* Example-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDCEFA62299A765D005E075B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDCEFA64299A765D005E075B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DDCEFA66299A765D005E075B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDCEFA6B299A765D005E075B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDCEFA6E299A765D005E075B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDCEFA70299A765D005E075B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDE23F34295996E9002E38B0 /* ImageScroll */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ImageScroll; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +46,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD6902D3299A73DE0045DAA7 /* Gestures in Frameworks */,
 				DDE23F3729599716002E38B0 /* ImageScroll in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCEFA5D299A765D005E075B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCEFA75299A76F3005E075B /* ImageScroll in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,7 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				DDE23F33295996E9002E38B0 /* Packages */,
-				DD7C71C62959964D0052011D /* Example */,
+				DD7C71C62959964D0052011D /* Example-SwiftUI */,
+				DDCEFA61299A765D005E075B /* Example-UIKit */,
 				DD7C71C52959964D0052011D /* Products */,
 				DDE23F3529599712002E38B0 /* Frameworks */,
 			);
@@ -53,31 +76,37 @@
 		DD7C71C52959964D0052011D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DD7C71C42959964D0052011D /* Example.app */,
+				DD7C71C42959964D0052011D /* Example-SwiftUI.app */,
+				DDCEFA60299A765D005E075B /* Example-UIKit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DD7C71C62959964D0052011D /* Example */ = {
+		DD7C71C62959964D0052011D /* Example-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				DD64E7FB2959CE1600A5708F /* Example-Info.plist */,
-				DD7C71C92959964D0052011D /* ContentView.swift */,
-				DD5F6446295999E70040637F /* ExampleApp.swift */,
-				DD5F644829599AF60040637F /* ExampleAppWindowGroup.swift */,
-				DD5F6444295999590040637F /* SceneDelegate.swift */,
-				DD7C71CB2959964E0052011D /* Assets.xcassets */,
-				DD7C71CD2959964E0052011D /* Preview Content */,
+				DDCEFA5A299A75D9005E075B /* Info.plist */,
+				DD60F9F4299A74CB00E54C96 /* Assets.xcassets */,
+				DD60F9F9299A74CB00E54C96 /* ContentView.swift */,
+				DD60F9F1299A74CB00E54C96 /* ExampleApp.swift */,
+				DD60F9F7299A74CB00E54C96 /* ExampleAppWindowGroup.swift */,
+				DD60F9F8299A74CB00E54C96 /* Package.swift */,
+				DD60F9F6299A74CB00E54C96 /* SceneDelegate.swift */,
 			);
-			name = Example;
+			name = "Example-SwiftUI";
 			sourceTree = "<group>";
 		};
-		DD7C71CD2959964E0052011D /* Preview Content */ = {
+		DDCEFA61299A765D005E075B /* Example-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				DD7C71CE2959964E0052011D /* Preview Assets.xcassets */,
+				DDCEFA62299A765D005E075B /* AppDelegate.swift */,
+				DDCEFA64299A765D005E075B /* SceneDelegate.swift */,
+				DDCEFA66299A765D005E075B /* ViewController.swift */,
+				DDCEFA6B299A765D005E075B /* Assets.xcassets */,
+				DDCEFA6D299A765D005E075B /* LaunchScreen.storyboard */,
+				DDCEFA70299A765D005E075B /* Info.plist */,
 			);
-			path = "Preview Content";
+			path = "Example-UIKit";
 			sourceTree = "<group>";
 		};
 		DDE23F33295996E9002E38B0 /* Packages */ = {
@@ -98,9 +127,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DD7C71C32959964D0052011D /* Example */ = {
+		DD7C71C32959964D0052011D /* Example-SwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DD7C71D22959964E0052011D /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = DD7C71D22959964E0052011D /* Build configuration list for PBXNativeTarget "Example-SwiftUI" */;
 			buildPhases = (
 				DD7C71C02959964D0052011D /* Sources */,
 				DD7C71C12959964D0052011D /* Frameworks */,
@@ -110,12 +139,33 @@
 			);
 			dependencies = (
 			);
-			name = Example;
+			name = "Example-SwiftUI";
 			packageProductDependencies = (
 				DDE23F3629599716002E38B0 /* ImageScroll */,
+				DD6902D2299A73DE0045DAA7 /* Gestures */,
 			);
 			productName = Example;
-			productReference = DD7C71C42959964D0052011D /* Example.app */;
+			productReference = DD7C71C42959964D0052011D /* Example-SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDCEFA5F299A765D005E075B /* Example-UIKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDCEFA71299A765D005E075B /* Build configuration list for PBXNativeTarget "Example-UIKit" */;
+			buildPhases = (
+				DDCEFA5C299A765D005E075B /* Sources */,
+				DDCEFA5D299A765D005E075B /* Frameworks */,
+				DDCEFA5E299A765D005E075B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example-UIKit";
+			packageProductDependencies = (
+				DDCEFA74299A76F3005E075B /* ImageScroll */,
+			);
+			productName = "Example-UIKit";
+			productReference = DDCEFA60299A765D005E075B /* Example-UIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -130,6 +180,10 @@
 				TargetAttributes = {
 					DD7C71C32959964D0052011D = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					DDCEFA5F299A765D005E075B = {
+						CreatedOnToolsVersion = 14.2;
 					};
 				};
 			};
@@ -142,11 +196,15 @@
 				Base,
 			);
 			mainGroup = DD7C71BB2959964D0052011D;
+			packageReferences = (
+				DD6902D1299A73DE0045DAA7 /* XCRemoteSwiftPackageReference "Gestures" */,
+			);
 			productRefGroup = DD7C71C52959964D0052011D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DD7C71C32959964D0052011D /* Example */,
+				DD7C71C32959964D0052011D /* Example-SwiftUI */,
+				DDCEFA5F299A765D005E075B /* Example-UIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -156,8 +214,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD7C71CF2959964E0052011D /* Preview Assets.xcassets in Resources */,
-				DD7C71CC2959964E0052011D /* Assets.xcassets in Resources */,
+				DD60F9FC299A74CB00E54C96 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCEFA5E299A765D005E075B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCEFA6F299A765D005E075B /* LaunchScreen.storyboard in Resources */,
+				DDCEFA6C299A765D005E075B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,14 +234,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD5F644929599AF60040637F /* ExampleAppWindowGroup.swift in Sources */,
-				DD5F6447295999E70040637F /* ExampleApp.swift in Sources */,
-				DD7C71CA2959964D0052011D /* ContentView.swift in Sources */,
-				DD5F6445295999590040637F /* SceneDelegate.swift in Sources */,
+				DD60FA01299A74CB00E54C96 /* ContentView.swift in Sources */,
+				DD60F9FA299A74CB00E54C96 /* ExampleApp.swift in Sources */,
+				DD60F9FF299A74CB00E54C96 /* ExampleAppWindowGroup.swift in Sources */,
+				DD60F9FE299A74CB00E54C96 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDCEFA5C299A765D005E075B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDCEFA67299A765D005E075B /* ViewController.swift in Sources */,
+				DDCEFA63299A765D005E075B /* AppDelegate.swift in Sources */,
+				DDCEFA65299A765D005E075B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDCEFA6D299A765D005E075B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDCEFA6E299A765D005E075B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DD7C71D02959964E0052011D /* Debug */ = {
@@ -297,13 +384,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 35J7AXFYQT;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Example-Info.plist";
+				INFOPLIST_FILE = "Example-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -327,13 +413,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Preview Content\"";
 				DEVELOPMENT_TEAM = 35J7AXFYQT;
-				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Example-Info.plist";
+				INFOPLIST_FILE = "Example-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -345,6 +430,60 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.vospennikov.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDCEFA72299A765D005E075B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Example-UIKit/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Cluster.Example-UIKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDCEFA73299A765D005E075B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Example-UIKit/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Cluster.Example-UIKit";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -364,7 +503,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DD7C71D22959964E0052011D /* Build configuration list for PBXNativeTarget "Example" */ = {
+		DD7C71D22959964E0052011D /* Build configuration list for PBXNativeTarget "Example-SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DD7C71D32959964E0052011D /* Debug */,
@@ -373,9 +512,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		DDCEFA71299A765D005E075B /* Build configuration list for PBXNativeTarget "Example-UIKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDCEFA72299A765D005E075B /* Debug */,
+				DDCEFA73299A765D005E075B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		DD6902D1299A73DE0045DAA7 /* XCRemoteSwiftPackageReference "Gestures" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/vospennikov/Gestures";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
+		DD6902D2299A73DE0045DAA7 /* Gestures */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DD6902D1299A73DE0045DAA7 /* XCRemoteSwiftPackageReference "Gestures" */;
+			productName = Gestures;
+		};
+		DDCEFA74299A76F3005E075B /* ImageScroll */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ImageScroll;
+		};
 		DDE23F3629599716002E38B0 /* ImageScroll */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ImageScroll;

@@ -13,8 +13,10 @@ public final class ImageScrollView: UIScrollView {
     
     public var image: UIImage? {
         didSet {
-            guard let contentView = contentView else { return }
-            guard image != contentView.image else { return }
+            if let currentImage = contentView?.image,
+               currentImage == image {
+                return
+            }
             display(image: image)
         }
     }
@@ -28,6 +30,7 @@ public final class ImageScrollView: UIScrollView {
         setupView()
     }
     
+    @available(*, unavailable)
     public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -161,7 +164,7 @@ extension ImageScrollView {
         
         let xScale =  bounds.size.width  / imageSize.width
         let yScale = bounds.size.height / imageSize.height
-        var minScale = min(xScale, yScale)
+        var minScale = max(min(xScale, yScale), .ulpOfOne)
         
         if (minScale > maxScale) {
             minScale = maxScale

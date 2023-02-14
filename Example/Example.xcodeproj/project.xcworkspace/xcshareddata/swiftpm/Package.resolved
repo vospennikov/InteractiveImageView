@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/vospennikov/Gestures.git",
       "state" : {
-        "revision" : "f921bc8c372fd041135b0b6a892f2abfc7a557cd",
-        "version" : "1.0.0"
+        "revision" : "a847b5d231637eafada1d4decf7cd70ef5bc166a",
+        "version" : "1.0.2"
       }
     }
   ],
