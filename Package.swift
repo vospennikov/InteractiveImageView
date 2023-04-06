@@ -11,15 +11,7 @@ let package = Package(
     products: [
         .library(name: "ImageScroll", targets: ["ImageScroll"]),
     ],
-    dependencies: [
-        .package(url: "https://github.com/vospennikov/Gestures.git", .upToNextMajor(from: "1.0.0")),
-    ],
     targets: [
-        .target(
-            name: "ImageScroll",
-            dependencies: [
-                .product(name: "Gestures", package: "Gestures")
-            ]
-        ),
+        .target(name: "ImageScroll", dependencies: []),
     ]
 )
