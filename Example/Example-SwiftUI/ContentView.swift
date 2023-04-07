@@ -6,14 +6,14 @@
 //
 
 import SwiftUI
-import ImageScroll
+import InteractiveImageView
 import Gestures
 
 struct ContentView: View {
     @State var tapLocation: CGPoint = .zero
     
     var body: some View {
-        ImageScroll(image: .init(named: "Iceland")!, maxScale: 3.0, handleZoomingTap: $tapLocation)
+        InteractiveImage(image: .init(named: "Iceland")!, maxScale: 3.0, handleZoomingTap: $tapLocation)
             .onTouchGesture(count: 2) { gesture in
                 tapLocation = gesture.location
             }

@@ -6,11 +6,11 @@
 //
 
 import UIKit
-import ImageScroll
+import InteractiveImageView
 import Combine
 
 class ViewController: UIViewController {
-    lazy var imageScroll = ImageScrollView(maxScale: 2.0)
+    lazy var imageScroll = InteractiveImageView(maxScale: 2.0)
     lazy var loaderView: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView(style: .medium)
         view.color = .white

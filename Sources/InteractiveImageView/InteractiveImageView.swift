@@ -1,13 +1,13 @@
 //
-//  ImageScrollView.swift
-//  ImageScroll
+//  InteractiveImageView.swift
+//  InteractiveImageView
 //
 //  Created by Mikhail Vospennikov on 23.12.2022.
 //
 
 import UIKit
 
-public final class ImageScrollView: UIScrollView {
+public final class InteractiveImageView: UIScrollView {
     private var contentView: UIImageView?
     private var imageSize: CGSize = .zero
     
@@ -78,7 +78,7 @@ public final class ImageScrollView: UIScrollView {
 }
 
 // MARK: - Display content
-extension ImageScrollView {
+extension InteractiveImageView {
     private func display(image: UIImage?) {
         zoomScale = 1.0
         
@@ -89,12 +89,12 @@ extension ImageScrollView {
             contentView?.image = nil
             return
         }
-
+        
         let contentView = UIImageView(image: image)
         contentView.isUserInteractionEnabled = true
         self.contentView = contentView
         addSubview(contentView)
-
+        
         configure(for: image.size)
     }
     
@@ -107,7 +107,7 @@ extension ImageScrollView {
 }
 
 // MARK: - Position
-extension ImageScrollView {
+extension InteractiveImageView {
     private func moveContentToCenter() {
         guard let contentView = contentView else { return }
         
@@ -131,7 +131,7 @@ extension ImageScrollView {
 }
 
 // MARK: - Zoom
-extension ImageScrollView {
+extension InteractiveImageView {
     public func zoom(to point: CGPoint, animated: Bool) {
         guard minimumZoomScale != maximumZoomScale, minimumZoomScale < maximumZoomScale else {
             return
@@ -176,7 +176,7 @@ extension ImageScrollView {
 }
 
 // MARK: - Device rotation
-extension ImageScrollView {
+extension InteractiveImageView {
     private func restoreCenterPoint(to oldCenter: CGPoint, oldScale: CGFloat) {
         zoomScale = min(maximumZoomScale, max(minimumZoomScale, oldScale))
         
@@ -216,7 +216,7 @@ extension ImageScrollView {
 }
 
 // MARK: - UIScrollViewDelegate
-extension ImageScrollView: UIScrollViewDelegate {
+extension InteractiveImageView: UIScrollViewDelegate {
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         contentView
     }
@@ -224,7 +224,7 @@ extension ImageScrollView: UIScrollViewDelegate {
     public func scrollViewDidZoom(_ scrollView: UIScrollView) {
         moveContentToCenter()
     }
-
+    
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         moveContentToCenter()
     }

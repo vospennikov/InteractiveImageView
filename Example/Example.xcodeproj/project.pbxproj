@@ -13,13 +13,13 @@
 		DD60F9FF299A74CB00E54C96 /* ExampleAppWindowGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9F7299A74CB00E54C96 /* ExampleAppWindowGroup.swift */; };
 		DD60FA01299A74CB00E54C96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9F9299A74CB00E54C96 /* ContentView.swift */; };
 		DD6902D3299A73DE0045DAA7 /* Gestures in Frameworks */ = {isa = PBXBuildFile; productRef = DD6902D2299A73DE0045DAA7 /* Gestures */; };
+		DDAB7BCB29DFE8B4000AEF05 /* InteractiveImageView in Frameworks */ = {isa = PBXBuildFile; productRef = DDAB7BCA29DFE8B4000AEF05 /* InteractiveImageView */; };
+		DDAB7BCD29DFE8BC000AEF05 /* InteractiveImageView in Frameworks */ = {isa = PBXBuildFile; productRef = DDAB7BCC29DFE8BC000AEF05 /* InteractiveImageView */; };
 		DDCEFA63299A765D005E075B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFA62299A765D005E075B /* AppDelegate.swift */; };
 		DDCEFA65299A765D005E075B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFA64299A765D005E075B /* SceneDelegate.swift */; };
 		DDCEFA67299A765D005E075B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFA66299A765D005E075B /* ViewController.swift */; };
 		DDCEFA6C299A765D005E075B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCEFA6B299A765D005E075B /* Assets.xcassets */; };
 		DDCEFA6F299A765D005E075B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCEFA6D299A765D005E075B /* LaunchScreen.storyboard */; };
-		DDCEFA75299A76F3005E075B /* ImageScroll in Frameworks */ = {isa = PBXBuildFile; productRef = DDCEFA74299A76F3005E075B /* ImageScroll */; };
-		DDE23F3729599716002E38B0 /* ImageScroll in Frameworks */ = {isa = PBXBuildFile; productRef = DDE23F3629599716002E38B0 /* ImageScroll */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +30,7 @@
 		DD60F9F8299A74CB00E54C96 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = "Example-SwiftUI/Package.swift"; sourceTree = "<group>"; };
 		DD60F9F9299A74CB00E54C96 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "Example-SwiftUI/ContentView.swift"; sourceTree = "<group>"; };
 		DD7C71C42959964D0052011D /* Example-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAB7BC929DFE872000AEF05 /* InteractiveImageView */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = InteractiveImageView; path = ..; sourceTree = "<group>"; };
 		DDCEFA5A299A75D9005E075B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Example-SwiftUI/Info.plist"; sourceTree = "<group>"; };
 		DDCEFA60299A765D005E075B /* Example-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCEFA62299A765D005E075B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		DDCEFA6B299A765D005E075B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDCEFA6E299A765D005E075B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDCEFA70299A765D005E075B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDE23F34295996E9002E38B0 /* ImageScroll */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ImageScroll; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAB7BCB29DFE8B4000AEF05 /* InteractiveImageView in Frameworks */,
 				DD6902D3299A73DE0045DAA7 /* Gestures in Frameworks */,
-				DDE23F3729599716002E38B0 /* ImageScroll in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDCEFA75299A76F3005E075B /* ImageScroll in Frameworks */,
+				DDAB7BCD29DFE8BC000AEF05 /* InteractiveImageView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +112,7 @@
 		DDE23F33295996E9002E38B0 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				DDE23F34295996E9002E38B0 /* ImageScroll */,
+				DDAB7BC929DFE872000AEF05 /* InteractiveImageView */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -141,8 +141,8 @@
 			);
 			name = "Example-SwiftUI";
 			packageProductDependencies = (
-				DDE23F3629599716002E38B0 /* ImageScroll */,
 				DD6902D2299A73DE0045DAA7 /* Gestures */,
+				DDAB7BCA29DFE8B4000AEF05 /* InteractiveImageView */,
 			);
 			productName = Example;
 			productReference = DD7C71C42959964D0052011D /* Example-SwiftUI.app */;
@@ -162,7 +162,7 @@
 			);
 			name = "Example-UIKit";
 			packageProductDependencies = (
-				DDCEFA74299A76F3005E075B /* ImageScroll */,
+				DDAB7BCC29DFE8BC000AEF05 /* InteractiveImageView */,
 			);
 			productName = "Example-UIKit";
 			productReference = DDCEFA60299A765D005E075B /* Example-UIKit.app */;
@@ -540,13 +540,13 @@
 			package = DD6902D1299A73DE0045DAA7 /* XCRemoteSwiftPackageReference "Gestures" */;
 			productName = Gestures;
 		};
-		DDCEFA74299A76F3005E075B /* ImageScroll */ = {
+		DDAB7BCA29DFE8B4000AEF05 /* InteractiveImageView */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ImageScroll;
+			productName = InteractiveImageView;
 		};
-		DDE23F3629599716002E38B0 /* ImageScroll */ = {
+		DDAB7BCC29DFE8BC000AEF05 /* InteractiveImageView */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ImageScroll;
+			productName = InteractiveImageView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
