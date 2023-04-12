@@ -9,7 +9,7 @@ import UIKit
 import InteractiveImageView
 
 class ViewController: UIViewController {
-    lazy var imageScroll = InteractiveImageView(maxScale: 2.0)
+    lazy var imageView = InteractiveImageView(maxScale: 2.0)
     lazy var loaderView: UIActivityIndicatorView = {
         let view = UIActivityIndicatorView(style: .medium)
         view.color = .white
@@ -24,13 +24,13 @@ class ViewController: UIViewController {
     }
 
     fileprivate func configureHierarchy() {
-        view.addSubview(imageScroll)
-        imageScroll.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(imageView)
+        imageView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            imageScroll.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            imageScroll.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            imageScroll.topAnchor.constraint(equalTo: view.topAnchor),
-            imageScroll.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            imageView.topAnchor.constraint(equalTo: view.topAnchor),
+            imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         
         view.addSubview(loaderView)
@@ -44,20 +44,20 @@ class ViewController: UIViewController {
     fileprivate func configureGestures() {
         let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(doubleTapGestureHandler))
         doubleTapGesture.numberOfTapsRequired = 2
-        imageScroll.addGestureRecognizer(doubleTapGesture)
+        imageView.addGestureRecognizer(doubleTapGesture)
     }
     
     @objc
     fileprivate func doubleTapGestureHandler(_ sender: UITapGestureRecognizer) {
-        let location = sender.location(in: imageScroll)
-        imageScroll.zoom(to: location, animated: true)
+        let location = sender.location(in: imageView)
+        imageView.zoom(to: location, animated: true)
     }
     
     fileprivate func startLoadingImage() {
         loaderView.startAnimating()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [weak imageScroll, weak loaderView] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [weak imageView, weak loaderView] in
             loaderView?.stopAnimating()
-            imageScroll?.image = UIImage(named: "Iceland")
+            imageView?.image = UIImage(named: "Iceland")
         }
     }
 }
