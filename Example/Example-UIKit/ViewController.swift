@@ -7,7 +7,6 @@
 
 import UIKit
 import InteractiveImageView
-import Combine
 
 class ViewController: UIViewController {
     lazy var imageScroll = InteractiveImageView(maxScale: 2.0)
@@ -58,7 +57,7 @@ class ViewController: UIViewController {
         loaderView.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [weak imageScroll, weak loaderView] in
             loaderView?.stopAnimating()
-            imageScroll?.image = UIImage(named: "FaroeIslands")
+            imageScroll?.image = UIImage(named: "Iceland")
         }
     }
 }

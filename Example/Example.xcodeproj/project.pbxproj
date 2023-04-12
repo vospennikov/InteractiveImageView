@@ -12,9 +12,9 @@
 		DD60F9FE299A74CB00E54C96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9F6299A74CB00E54C96 /* SceneDelegate.swift */; };
 		DD60F9FF299A74CB00E54C96 /* ExampleAppWindowGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9F7299A74CB00E54C96 /* ExampleAppWindowGroup.swift */; };
 		DD60FA01299A74CB00E54C96 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD60F9F9299A74CB00E54C96 /* ContentView.swift */; };
-		DD6902D3299A73DE0045DAA7 /* Gestures in Frameworks */ = {isa = PBXBuildFile; productRef = DD6902D2299A73DE0045DAA7 /* Gestures */; };
 		DDAB7BCB29DFE8B4000AEF05 /* InteractiveImageView in Frameworks */ = {isa = PBXBuildFile; productRef = DDAB7BCA29DFE8B4000AEF05 /* InteractiveImageView */; };
 		DDAB7BCD29DFE8BC000AEF05 /* InteractiveImageView in Frameworks */ = {isa = PBXBuildFile; productRef = DDAB7BCC29DFE8BC000AEF05 /* InteractiveImageView */; };
+		DDCB94CA29E53ADB006B8695 /* Gestures in Frameworks */ = {isa = PBXBuildFile; productRef = DDCB94C929E53ADB006B8695 /* Gestures */; };
 		DDCEFA63299A765D005E075B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFA62299A765D005E075B /* AppDelegate.swift */; };
 		DDCEFA65299A765D005E075B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFA64299A765D005E075B /* SceneDelegate.swift */; };
 		DDCEFA67299A765D005E075B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCEFA66299A765D005E075B /* ViewController.swift */; };
@@ -46,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCB94CA29E53ADB006B8695 /* Gestures in Frameworks */,
 				DDAB7BCB29DFE8B4000AEF05 /* InteractiveImageView in Frameworks */,
-				DD6902D3299A73DE0045DAA7 /* Gestures in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +141,8 @@
 			);
 			name = "Example-SwiftUI";
 			packageProductDependencies = (
-				DD6902D2299A73DE0045DAA7 /* Gestures */,
 				DDAB7BCA29DFE8B4000AEF05 /* InteractiveImageView */,
+				DDCB94C929E53ADB006B8695 /* Gestures */,
 			);
 			productName = Example;
 			productReference = DD7C71C42959964D0052011D /* Example-SwiftUI.app */;
@@ -197,7 +197,7 @@
 			);
 			mainGroup = DD7C71BB2959964D0052011D;
 			packageReferences = (
-				DD6902D1299A73DE0045DAA7 /* XCRemoteSwiftPackageReference "Gestures" */,
+				DDCB94C829E53ADB006B8695 /* XCRemoteSwiftPackageReference "Gestures" */,
 			);
 			productRefGroup = DD7C71C52959964D0052011D /* Products */;
 			projectDirPath = "";
@@ -524,7 +524,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		DD6902D1299A73DE0045DAA7 /* XCRemoteSwiftPackageReference "Gestures" */ = {
+		DDCB94C829E53ADB006B8695 /* XCRemoteSwiftPackageReference "Gestures" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/vospennikov/Gestures";
 			requirement = {
@@ -535,11 +535,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DD6902D2299A73DE0045DAA7 /* Gestures */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = DD6902D1299A73DE0045DAA7 /* XCRemoteSwiftPackageReference "Gestures" */;
-			productName = Gestures;
-		};
 		DDAB7BCA29DFE8B4000AEF05 /* InteractiveImageView */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = InteractiveImageView;
@@ -547,6 +542,11 @@
 		DDAB7BCC29DFE8BC000AEF05 /* InteractiveImageView */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = InteractiveImageView;
+		};
+		DDCB94C929E53ADB006B8695 /* Gestures */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDCB94C829E53ADB006B8695 /* XCRemoteSwiftPackageReference "Gestures" */;
+			productName = Gestures;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
