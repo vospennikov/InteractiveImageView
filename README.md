@@ -4,6 +4,10 @@
 ![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat)
 ![GitHub](https://img.shields.io/badge/licence-MIT-orange)
 
+![Demo](Images/demo.gif)
+
+Image view with support for zoom, scroll, and rotation. Support SwiftUI and UIKit. 
+
 ## Usage
 ### SwiftUI
 ```swift
