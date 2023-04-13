@@ -1,8 +1,9 @@
 ## InteractiveImageView
 ![Swift](https://img.shields.io/badge/Swift-5.8-orange?style=flat)
-![Platforms](https://img.shields.io/badge/platforms-iOS--13-orange?style=flat)
+![Platform](https://img.shields.io/badge/Platform-iOS%2013-orange)
+![Framework](https://img.shields.io/badge/Framework-UIKit%20%7C%20SwiftUI-orange)
 ![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat)
-![GitHub](https://img.shields.io/badge/licence-MIT-orange)
+![GitHub](https://img.shields.io/badge/Licence-MIT-orange)
 
 ![Demo](Images/demo.gif)
 
