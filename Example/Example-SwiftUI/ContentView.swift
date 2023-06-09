@@ -40,6 +40,7 @@ struct ContentView: View {
 
 // MARK: -
 private extension ContentView {
+    @MainActor
     func handleFingerGesture(_ gesture: TouchGesture.Value) {
         fingerPosition = gesture.location
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) {

@@ -12,6 +12,20 @@ let package = Package(
         .library(name: "InteractiveImageView", targets: ["InteractiveImageView"]),
     ],
     targets: [
-        .target(name: "InteractiveImageView", dependencies: []),
+        .target(
+            name: "InteractiveImageView",
+            dependencies: [],
+            swiftSettings: [
+                .unsafeFlags(
+                    [
+                        "-Xfrontend", "-warn-long-expression-type-checking=100",
+                        "-Xfrontend", "-warn-long-function-bodies=100",
+                        "-Xfrontend", "-warn-concurrency",
+                        "-Xfrontend", "-enable-actor-data-race-checks"
+                    ],
+                    .when(configuration: .debug)
+                )
+            ]
+        ),
     ]
 )

@@ -43,10 +43,6 @@ public final class InteractiveImageView: UIScrollView {
         delegate = self
     }
     
-    deinit {
-        delegate = nil
-    }
-    
     public override func layoutSubviews() {
         super.layoutSubviews()
         guard let image = image else { return }

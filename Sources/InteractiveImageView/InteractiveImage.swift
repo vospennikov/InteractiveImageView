@@ -39,6 +39,7 @@ public struct InteractiveImage: UIViewRepresentable {
 }
 
 extension InteractiveImage {
+    @MainActor
     final public class Coordinator {
         internal func update(_ representable: InteractiveImage, view interactiveImage: InteractiveImageView) {
             updateZoom(representable, view: interactiveImage)
