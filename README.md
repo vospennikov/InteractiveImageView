@@ -5,9 +5,9 @@
 ![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat)
 ![GitHub](https://img.shields.io/badge/Licence-MIT-orange)
 
-![Demo](Images/demo.gif)
+InteractiveImageView is an open-source library that provides experience showing images like a Photos App on iPhone. (Tap to zoom, pinch and pan gestures, rotation with keep position, motion inertia). The view supports UIKit and SwiftUI framework. 
 
-Image view with support for zoom, scroll, and rotation. Support SwiftUI and UIKit. 
+![Demo](Images/demo.gif)
 
 ## Usage
 ### SwiftUI
