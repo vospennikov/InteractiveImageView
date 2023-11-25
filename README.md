@@ -1,5 +1,5 @@
 ## InteractiveImageView
-![Swift](https://img.shields.io/badge/Swift-5.8-orange?style=flat)
+![Swift](https://img.shields.io/badge/Swift-5.9-orange?style=flat)
 ![Platform](https://img.shields.io/badge/Platform-iOS%2013-orange)
 ![Framework](https://img.shields.io/badge/Framework-UIKit%20%7C%20SwiftUI-orange)
 ![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat)
@@ -36,7 +36,7 @@ func gestureHandler(_ sender: UITapGestureRecognizer) {
 ### Swift Package Manager
 Add the following dependency to your **Package.swift** file:
 ```swift
-.package(url: "https://github.com/vospennikov/InteractiveImageView.git", .upToNextMinor(from: "1.0.6"))
+.package(url: "https://github.com/vospennikov/InteractiveImageView.git", .upToNextMinor(from: "1.0.8"))
 ```
 
 ## License
