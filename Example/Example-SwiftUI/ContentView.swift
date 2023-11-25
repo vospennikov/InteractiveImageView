@@ -18,7 +18,7 @@ struct ContentView: View {
             Color.black
 
             InteractiveImage(
-                image: .init(named: "Iceland")!,
+                image: .iceland,
                 maxScale: 2.0,
                 handleZoomingTap: $tapLocation
             )

@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         loaderView.startAnimating()
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) { [weak imageView, weak loaderView] in
             loaderView?.stopAnimating()
-            imageView?.image = UIImage(named: "Iceland")
+            imageView?.image = .iceland
         }
     }
 }
