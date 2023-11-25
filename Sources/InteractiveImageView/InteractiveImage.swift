@@ -13,45 +13,46 @@ public struct InteractiveImage: UIViewRepresentable {
     let maxScale: CGFloat
     @Binding var handleZoomingTap: CGPoint
     var isAnimatedZooming: Bool
-    
-    public init(image: UIImage,
-                maxScale: CGFloat = 1.0,
-                handleZoomingTap: Binding<CGPoint> = .constant(.zero),
-                isAnimatedZooming: Bool = true) {
-        
+
+    public init(
+        image: UIImage,
+        maxScale: CGFloat = 1.0,
+        handleZoomingTap: Binding<CGPoint> = .constant(.zero),
+        isAnimatedZooming: Bool = true
+    ) {
         self.image = image
         self.maxScale = maxScale
-        self._handleZoomingTap = handleZoomingTap
+        _handleZoomingTap = handleZoomingTap
         self.isAnimatedZooming = isAnimatedZooming
     }
-    
+
     public func makeUIView(context: Context) -> InteractiveImageView {
         InteractiveImageView(image: image, maxScale: maxScale)
     }
-    
+
     public func updateUIView(_ uiView: InteractiveImageView, context: Context) {
         context.coordinator.update(self, view: uiView)
     }
-    
+
     public func makeCoordinator() -> Coordinator {
         Coordinator()
     }
 }
 
-extension InteractiveImage {
+public extension InteractiveImage {
     @MainActor
-    final public class Coordinator {
-        internal func update(_ representable: InteractiveImage, view interactiveImage: InteractiveImageView) {
+    final class Coordinator {
+        func update(_ representable: InteractiveImage, view interactiveImage: InteractiveImageView) {
             updateZoom(representable, view: interactiveImage)
         }
-        
+
         private func updateZoom(_ representable: InteractiveImage, view interactiveImage: InteractiveImageView) {
             switch representable.handleZoomingTap {
-                case .zero:
-                    guard interactiveImage.minimumZoomScale != interactiveImage.zoomScale else { return }
-                    interactiveImage.zoom(to: representable.handleZoomingTap, animated: representable.isAnimatedZooming)
-                default:
-                    interactiveImage.zoom(to: representable.handleZoomingTap, animated: representable.isAnimatedZooming)
+            case .zero:
+                guard interactiveImage.minimumZoomScale != interactiveImage.zoomScale else { return }
+                interactiveImage.zoom(to: representable.handleZoomingTap, animated: representable.isAnimatedZooming)
+            default:
+                interactiveImage.zoom(to: representable.handleZoomingTap, animated: representable.isAnimatedZooming)
             }
         }
     }

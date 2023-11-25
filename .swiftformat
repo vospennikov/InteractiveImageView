@@ -1,0 +1,20 @@
+--emptybraces spaced
+--exponentgrouping enabled
+--fractiongrouping enabled
+--importgrouping testable-last
+--lineaftermarks false
+--maxwidth 120
+--ranges no-space
+--wraparguments before-first
+--wrapcollections before-first
+--wrapparameters before-first
+
+--disable hoistPatternLet
+--disable unusedArguments
+--enable acronyms
+--enable blankLineAfterImports
+--enable blockComments
+--enable isEmpty
+--enable wrapEnumCases
+--enable wrapSwitchCases
+

@@ -5,18 +5,18 @@
 //  Created by Mikhail Vospennikov on 26.12.2022.
 //
 
-import SwiftUI
-import InteractiveImageView
 import Gestures
+import InteractiveImageView
+import SwiftUI
 
 struct ContentView: View {
     @State var fingerPosition: CGPoint?
     @State var tapLocation: CGPoint = .zero
-    
+
     var body: some View {
         ZStack {
             Color.black
-            
+
             InteractiveImage(
                 image: .init(named: "Iceland")!,
                 maxScale: 2.0,
@@ -26,7 +26,7 @@ struct ContentView: View {
                 tapLocation = gesture.location
                 handleFingerGesture(gesture)
             }
-            
+
             if let fingerPosition {
                 Finger(position: fingerPosition)
             }
@@ -47,7 +47,7 @@ private extension ContentView {
             fingerPosition = nil
         }
     }
-    
+
     @ViewBuilder
     func Finger(position: CGPoint) -> some View {
         ZStack {

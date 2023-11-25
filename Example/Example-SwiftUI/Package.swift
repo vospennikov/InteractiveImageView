@@ -3,8 +3,8 @@
 import PackageDescription
 
 let package = Package(
-  name: "",
-  products: [],
-  dependencies: [],
-  targets: []
+    name: "",
+    products: [],
+    dependencies: [],
+    targets: []
 )

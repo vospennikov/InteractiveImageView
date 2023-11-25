@@ -3,10 +3,10 @@
     {
       "identity" : "gestures",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/vospennikov/Gestures.git",
+      "location" : "https://github.com/vospennikov/Gestures",
       "state" : {
-        "revision" : "0643b5287fdd994ea3041ebbce2174aa9598c458",
-        "version" : "1.0.4"
+        "revision" : "ea607f628cbff7d9b46184f66b66da327cde542d",
+        "version" : "1.0.6"
       }
     }
   ],
