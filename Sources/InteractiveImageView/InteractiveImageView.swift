@@ -41,6 +41,7 @@ public final class InteractiveImageView: UIScrollView {
         showsVerticalScrollIndicator = false
         showsHorizontalScrollIndicator = false
         decelerationRate = .fast
+        contentInsetAdjustmentBehavior = .never
         clipsToBounds = true
         delegate = self
     }
@@ -130,13 +131,15 @@ extension InteractiveImageView {
 
 // MARK: - Zoom
 extension InteractiveImageView {
-    public func zoom(to point: CGPoint, animated: Bool) {
-        guard minimumZoomScale != maximumZoomScale, minimumZoomScale < maximumZoomScale else {
+    public func zoom(to point: CGPoint, scale: CGFloat, animated: Bool) {
+        guard minimumZoomScale != maximumZoomScale,
+              minimumZoomScale < maximumZoomScale
+        else {
             return
         }
 
         let scale: CGFloat = if zoomScale == minimumZoomScale {
-            maximumZoomScale
+            min(maximumZoomScale, scale)
         } else {
             minimumZoomScale
         }

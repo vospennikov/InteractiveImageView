@@ -19,8 +19,8 @@ struct ContentView: View {
 
             InteractiveImage(
                 image: .iceland,
-                maxScale: 2.0,
-                handleZoomingTap: $tapLocation
+                maximumZoomScale: 2.0,
+                zoomInteraction: .init(location: tapLocation, scale: 1.2, animated: true)
             )
             .onTouchGesture(count: 2) { gesture in
                 tapLocation = gesture.location

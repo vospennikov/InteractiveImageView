@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     @objc
     fileprivate func doubleTapGestureHandler(_ sender: UITapGestureRecognizer) {
         let location = sender.location(in: imageView)
-        imageView.zoom(to: location, animated: true)
+        imageView.zoom(to: location, scale: 2.0, animated: true)
     }
 
     fileprivate func startLoadingImage() {

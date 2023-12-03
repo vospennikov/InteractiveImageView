@@ -10,24 +10,43 @@ import UIKit
 
 public struct InteractiveImage: UIViewRepresentable {
     let image: UIImage
-    let maxScale: CGFloat
-    @Binding var handleZoomingTap: CGPoint
-    var isAnimatedZooming: Bool
+    let maximumZoomScale: CGFloat
+    var zoomInteraction: ZoomInteraction
+
+    public struct ZoomInteraction: Equatable {
+        public var location: CGPoint
+        public var scale: CGFloat
+        public var animated: Bool
+
+        public init(location: CGPoint = .zero, scale: CGFloat = 1.0, animated: Bool = true) {
+            self.location = location
+            self.scale = scale
+            self.animated = animated
+        }
+    }
 
     public init(
         image: UIImage,
-        maxScale: CGFloat = 1.0,
-        handleZoomingTap: Binding<CGPoint> = .constant(.zero),
-        isAnimatedZooming: Bool = true
+        maximumZoomScale: CGFloat = 1.0,
+        zoomInteraction: ZoomInteraction
     ) {
         self.image = image
-        self.maxScale = maxScale
-        _handleZoomingTap = handleZoomingTap
-        self.isAnimatedZooming = isAnimatedZooming
+        self.maximumZoomScale = maximumZoomScale
+        self.zoomInteraction = zoomInteraction
+    }
+
+    public init(
+        image: UIImage,
+        maximumZoomScale: CGFloat = 1.0,
+        location: CGPoint
+    ) {
+        self.image = image
+        self.maximumZoomScale = maximumZoomScale
+        zoomInteraction = .init(location: location)
     }
 
     public func makeUIView(context: Context) -> InteractiveImageView {
-        InteractiveImageView(image: image, maxScale: maxScale)
+        InteractiveImageView(image: image, maxScale: maximumZoomScale)
     }
 
     public func updateUIView(_ uiView: InteractiveImageView, context: Context) {
@@ -47,13 +66,11 @@ public extension InteractiveImage {
         }
 
         private func updateZoom(_ representable: InteractiveImage, view interactiveImage: InteractiveImageView) {
-            switch representable.handleZoomingTap {
-            case .zero:
-                guard interactiveImage.minimumZoomScale != interactiveImage.zoomScale else { return }
-                interactiveImage.zoom(to: representable.handleZoomingTap, animated: representable.isAnimatedZooming)
-            default:
-                interactiveImage.zoom(to: representable.handleZoomingTap, animated: representable.isAnimatedZooming)
-            }
+            interactiveImage.zoom(
+                to: representable.zoomInteraction.location,
+                scale: representable.zoomInteraction.scale,
+                animated: representable.zoomInteraction.animated
+            )
         }
     }
 }
