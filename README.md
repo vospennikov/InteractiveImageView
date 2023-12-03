@@ -13,7 +13,7 @@ InteractiveImageView is an open-source library that provides experience showing 
 ### SwiftUI
 ```swift
 @State var tapLocation: CGPoint = .zero
-InteractiveImage(image: .init(named: "Iceland"), handleZoomingTap: $tapLocation)
+InteractiveImage(image: .init(named: "Iceland"), zoomInteraction: .init(location: tapLocation, scale: 1.2, animated: true)
 ```
 SwiftUI before iOS 16 didn't support touch location detection. To zoom to the touch location, you could use the [Gestures](https://github.com/vospennikov/Gestures) package.
 ```swift
@@ -28,7 +28,7 @@ interactiveImageView.image = UIImage(named: "Iceland")
 
 func gestureHandler(_ sender: UITapGestureRecognizer) {
   let location = sender.location(in: imageView)
-  interactiveImageView.zoom(to: location, animated: true)
+  interactiveImageView.zoom(to: location, scale: 2.0, animated: true)
 }
 ```
 
@@ -36,7 +36,7 @@ func gestureHandler(_ sender: UITapGestureRecognizer) {
 ### Swift Package Manager
 Add the following dependency to your **Package.swift** file:
 ```swift
-.package(url: "https://github.com/vospennikov/InteractiveImageView.git", .upToNextMinor(from: "1.0.8"))
+.package(url: "https://github.com/vospennikov/InteractiveImageView.git", .upToNextMinor(from: "1.10.0"))
 ```
 
 ## License
